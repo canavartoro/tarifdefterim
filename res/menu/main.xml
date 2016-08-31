@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.toro.tarifdefterim.MainActivity" >
+
+    <item
+        android:id="@+id/action_ara"
+        android:icon="@drawable/ara"
+        android:title="Ara"
+        app:showAsAction="withText|ifRoom"/>
+    <item
+        android:id="@+id/action_kategoriekle"
+        android:orderInCategory="100"
+        android:title="Kategori Ekle"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_kategorisil"
+        android:orderInCategory="100"
+        android:title="KAtegori Sil"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Ayarlar"
+        app:showAsAction="never"/>
+
+</menu>

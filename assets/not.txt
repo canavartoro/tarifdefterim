@@ -1,0 +1,5 @@
+http://www.gunesmobilya.com/Service/EatService.asmx
+
+
+tek tiklamayla acilacak.
+info tusu kalkacak, detay ekranýnda týklamada kapanacak

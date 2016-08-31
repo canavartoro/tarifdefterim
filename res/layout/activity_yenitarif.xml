@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F5F5" >
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left"
+        android:padding="5dip" />
+
+    <ImageView
+        android:id="@+id/img_tarifresim"
+        android:layout_width="140dip"
+        android:layout_height="110dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinner1"
+        android:src="@drawable/gorsel_yok" />
+
+    <EditText
+        android:id="@+id/edit_tarifad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/img_tarifresim"
+        android:layout_toRightOf="@+id/img_tarifresim"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_hazirlama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_tarifresim"
+        android:layout_toRightOf="@+id/img_tarifresim"
+        android:ems="4"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_hazirlama"
+        android:layout_alignLeft="@+id/edit_hazirlama"
+        android:text="HAZIRLAMA (dk)"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/edit_pisirme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_tarifresim"
+        android:layout_alignParentRight="true"
+        android:ems="4"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:text="PİŞİRME (dk)"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="2dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/img_tarifresim"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:background="#C6361D" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textview002"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal"
+                android:text="Malzemeler"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/edit_malzemeler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/textview01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal"
+                android:text="Hazırlanışı"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/edit_hazirlanisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview04"
+                    android:layout_width="281dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kişi"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText
+                    android:id="@+id/edit_kisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/img_tarifresim"
+                    android:layout_alignParentRight="true"
+                    android:ems="4"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textview06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Puanı"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/img_1puan"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/yildiz_bos"
+                    android:tag="1" />
+
+                <ImageButton
+                    android:id="@+id/img_2puan"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/yildiz_bos"
+                    android:tag="2" />
+
+                <ImageButton
+                    android:id="@+id/img_3puan"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/yildiz_bos"
+                    android:tag="3" />
+
+                <ImageButton
+                    android:id="@+id/img_4puan"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/yildiz_bos"
+                    android:tag="4" />
+
+                <ImageButton
+                    android:id="@+id/img_5puan"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/yildiz_bos"
+                    android:tag="5" />
+
+                <ImageButton
+                    android:id="@+id/img_6puan"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/yildiz_bos"
+                    android:tag="6" />
+
+                <ImageButton
+                    android:id="@+id/img_7puan"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/yildiz_bos"
+                    android:tag="7" />
+
+                <ImageButton
+                    android:id="@+id/img_8puan"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/yildiz_bos"
+                    android:tag="8" />
+
+                <ImageButton
+                    android:id="@+id/img_9puan"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/yildiz_bos"
+                    android:tag="9" />
+
+                <ImageButton
+                    android:id="@+id/img_10puan"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/yildiz_bos"
+                    android:tag="10" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_kamera"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:src="@drawable/kamera" />
+
+        <ImageButton
+            android:id="@+id/img_kaydet"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:src="@drawable/kaydet" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="2dip"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:background="#C6361D" />
+
+</RelativeLayout>

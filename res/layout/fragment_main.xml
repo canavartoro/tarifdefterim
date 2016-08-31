@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.toro.tarifdefterim.MainActivity$PlaceholderFragment" >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentTop="true" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <ImageButton
+            android:id="@+id/btn_sil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-3dip"
+            android:layout_weight=".25"
+            android:src="@drawable/sil" />
+
+        <ImageButton
+            android:id="@+id/btn_hakkinda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-7dip"
+            android:layout_weight=".5"
+            android:src="@drawable/hakkinda" />
+
+        <ImageButton
+            android:id="@+id/btn_ekle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-7dip"
+            android:layout_marginRight="-3dip"
+            android:layout_weight=".25"
+            android:src="@drawable/ekle" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

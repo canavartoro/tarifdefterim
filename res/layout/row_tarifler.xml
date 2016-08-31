@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_tariflerrow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF6F6" >
+
+    <!--
+        <ImageView
+        android:id="@+id/img_tarifresim"
+        android:layout_width="140dip"
+        android:layout_height="110dip"
+        android:scaleType="fitCenter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ash_arrow"
+        android:src="@drawable/gorsel_yok" />
+    -->
+
+    <com.androidhub4you.crop.RoundedImageView
+        android:id="@+id/img_tarifresim"
+        android:layout_width="140dip"
+        android:layout_height="110dip"
+        android:scaleType="fitCenter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/gorsel_yok" />
+
+    <TextView
+        android:id="@+id/text_tarifad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dip"
+        android:layout_toRightOf="@+id/img_tarifresim"
+        android:text="Abuzer Kebabı"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/text_hazirlama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_tarifresim"
+        android:layout_alignLeft="@+id/text_tarifad"
+        android:text="4 Dak." />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="2dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/img_tarifresim"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:background="#C6361D" />
+
+    <TextView
+        android:id="@+id/text_pisirme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_hazirlama"
+        android:layout_alignBottom="@+id/text_hazirlama"
+        android:layout_alignParentRight="true"
+        android:text="15 Dak." />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_pisirme"
+        android:layout_alignParentRight="true"
+        android:text="PİŞİRME"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_toRightOf="@+id/img_tarifresim"
+        android:layout_marginLeft="8dip"
+        android:text="HAZIRLAMA"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
